@@ -1,0 +1,56 @@
+{
+  "name": "@aautcq/nuxt-iconify-fontawesome",
+  "type": "module",
+  "version": "1.0.0-rc.1",
+  "private": false,
+  "description": "Use Font Awesome icons with popular Nuxt modules Nuxt Icon and NuxtUI",
+  "author": "Adrien Autricque <adrien.autricque@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/aautcq/nuxt-iconify-fontawesome#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aautcq/nuxt-iconify-fontawesome.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aautcq/nuxt-iconify-fontawesome/issues"
+  },
+  "keywords": [
+    "fontawesome",
+    "iconify",
+    "icons",
+    "nuxt"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "nuxt-iconify-fontawesome": "dist/scripts/create-icon-set.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:transpile": "tsc",
+    "build:sets": "node ./dist/scripts/convert-icons.js",
+    "build": "npm run build:transpile && npm run build:sets",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "~6.5.2",
+    "@iconify/tools": "~4.0.4",
+    "@types/yargs": "~17.0.32",
+    "chalk": "~5.3.0",
+    "cli-progress": "~3.12.0",
+    "pathe": "~1.1.2",
+    "yargs": "~17.7.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "~2.21.1",
+    "@fortawesome/free-brands-svg-icons": "~6.5.2",
+    "@fortawesome/free-regular-svg-icons": "~6.5.2",
+    "@fortawesome/free-solid-svg-icons": "~6.5.2",
+    "@types/cli-progress": "~3.11.5",
+    "eslint": "~8.57.0",
+    "typescript": "~5.4.5"
+  }
+}

@@ -1,0 +1,19 @@
+# Build outputs
+dist
+aautcq-nuxt-iconify-fontawesome-*.*.*.tgz
+
+# Node dependencies
+node_modules
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
