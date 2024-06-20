@@ -1,5 +1,10 @@
 # @aautcq/nuxt-iconify-fontawesome
 
+[![NPM version][npm-version-src]][npm-version-href]
+[![NPM downloads][npm-downloads-src]][npm-downloads-href]
+[![License][license-src]][license-href]
+[![Nuxt][nuxt-src]][nuxt-href]
+
 Converts Font Awesome icons to Iconify JSON data, allowing the use of popular Nuxt modules such as [Nuxt Icon](https://nuxt.com/modules/icon) or [NuxtUI](https://nuxt.com/modules/ui).
 
 One icon set is generated per Font Awesome collection. Here are the corresponding Iconify prefixes for each Font Awesome set:
@@ -91,7 +96,7 @@ This package comes with a CLI to help build Iconify icon sets from SVG files loc
 ```json
 {
   "scripts": {
-    "convert-icons": "nuxt-iconify-fontawesome --source=assets/icons/svgs --output=assets/icons/json"
+    "convert-icons": "nuxt-iconify-fontawesome -s=assets/icons/svgs -o=assets/icons/json"
   }
 }
 ```
@@ -120,3 +125,20 @@ You might have access to Font Awesome pro or a Font Awesome kit and need to gene
 - Uninstall the free Font Awesome icon packages and install the ones you need
 - Update the `/src/scripts/convert-icons.ts` file to use the icon collections from the installed packages
 - Run the `build` script to generate the Iconify icon sets in the `/dist` folder
+
+## License
+
+[MIT License](https://github.com/aautcq/nuxt-iconify-fontawesome/blob/master/LICENSE)
+
+<!-- Badges -->
+[npm-version-src]: https://img.shields.io/npm/v/@aautcq/nuxt-iconify-fontawesome/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-href]: https://npmjs.com/package/@aautcq/nuxt-iconify-fontawesome
+
+[npm-downloads-src]: https://img.shields.io/npm/dm/@aautcq/nuxt-iconify-fontawesome.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-href]: https://npmjs.com/package/@aautcq/nuxt-iconify-fontawesome
+
+[license-src]: https://img.shields.io/github/license/aautcq/nuxt-iconify-fontawesome.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-href]: https://github.com/aautcq/nuxt-iconify-fontawesome/blob/master/LICENSE
+
+[nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
+[nuxt-href]: https://nuxt.com
